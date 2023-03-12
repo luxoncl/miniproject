@@ -1,0 +1,77 @@
+.register{
+    background-image:url(/Users/luxoncl/projects/miniproject/src/images/1268183.webp);
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__left{
+    margin-right: 700px;
+}
+.header__right{
+    margin-left: 300px;
+}
+.header__right>a>h1{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 6px;
+    color: rgba(10, 241, 182, 1);
+    background-color:black ;
+    border-color:black;
+    box-shadow:0 5px 6px rgba(10, 241, 182, 1),0 2px 3px rgba(10, 241, 182, 1);
+
+}
+.body__content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+
+
+}
+.body__left{
+    font-size: 40px;
+    width: 30vh;
+}
+.body__right{
+    margin-left: 400px;
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 20px;
+    height: 200vh;
+    font-size: 40px;
+    color: rgba(10, 241, 182, 1);
+    border-color: black;
+    box-shadow:0 5px 20px rgba(10, 241, 182, 1),0 2px 20px rgba(10, 241, 182, 1);
+}
+.input>p{
+    font-family: Ex02;
+}
+.input > input{
+    color: aliceblue;
+    background-color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow:0 5px 6px rgba(10, 241, 182, 1),0 2px 3px rgba(10, 241, 182, 1);
+
+}
+.input>select{
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow:0 5px 6px rgba(10, 241, 182, 1),0 2px 3px rgba(10, 241, 182, 1);
+
+}
+.terms{
+    font-size: 40px;
+    width: 30vh;
+}
+.submit{
+    font-size: 40px;
+    color:rgba(10, 241, 182, 1) ;
+}
