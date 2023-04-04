@@ -50,9 +50,6 @@ const Admin = () => {
           </div>
           <h1 className="admin_title"> BrainWave</h1>
         </div>
-        <div className=" head_right">
-          <h1> Welcome Administrator </h1>
-        </div>
       </div>
       <div className="content">
         <div className="content_center">
@@ -92,7 +89,15 @@ const Admin = () => {
             </h1>
           )}
         </div>
-        <div className="">
+      </div>
+      <div>
+        <h1 className="text-cyan">Welcome Administrator</h1>
+        <div className="custom-card">
+          <h2>Project Name</h2>
+          <p>Lorem ipsum something something...</p>
+        </div>
+      </div>
+      {/* <div className="">
           <button onClick={desc}>
             <h1>Add on Projects </h1>
           </button>
@@ -101,8 +106,7 @@ const Admin = () => {
           <button>
             <h1> Remove Projects</h1>
           </button>
-        </div>
-      </div>
+        </div> */}
     </div>
   );
 };

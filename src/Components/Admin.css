@@ -1,6 +1,7 @@
 .admin{
-    background-image:url("../images/1268183.webp");
-    height:500vh;
+    background-image: url("../images/1268183.webp");
+    height: 500vh;
+   z-index: -1;
 }  
 
 .admin_head{
@@ -27,7 +28,7 @@
     display: flex;
     flex: 0.9;
 }
-.content_eft{
+/* .content_eft{
     text-align: center;
     color: black;
     background-color:rgba(10, 241, 182, 1) ;
@@ -36,12 +37,12 @@
     font-size: 30px;
     border-radius: 7px;
     box-shadow:0 5px 6px rgba(10, 241, 182, 1),0 2px 3px rgba(10, 241, 182, 1) ;
-}
-.content_center{
+} */
+/* .content_center{
    align-items: center;
    width: 350vh;
    height:150vh;
-}
+} */
 .project__details > input{
     color: aliceblue;
     background-color: black;

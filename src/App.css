@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.text-cyan {
+  color: rgba(10, 241, 182, 1);
+}
+
+* {
+  color: #ebebeb;
+}
+
+.custom-card {
+  background: #000000;
+box-shadow: inset 0px 4px 4px #0AF1B6;
+border-radius: 79px;
+}

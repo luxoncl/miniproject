@@ -51,6 +51,17 @@ const About = () => {
           </Link>
         </div>
       </div>
+      <div className="about_content">
+        <h1> About Us </h1>
+        <p>
+          {" "}
+          Millions of people around the world visit Indiegogo to find clever and
+          unconventional things that solve everyday problems large and small. By
+          giving entrepreneurs everywhere a platform to launch new and
+          groundbreaking products, we help surface innovations in tech, design,
+          and much more, all before they go mainstream{" "}
+        </p>
+      </div>
     </div>
   );
 };
