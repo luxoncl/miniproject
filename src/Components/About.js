@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import { Link } from "react-router-dom";
+import aboutus from "/Users/luxoncl/projects/miniproject/src/images/aboutus.jpeg";
 
 const About = () => {
   return (
@@ -58,9 +59,17 @@ const About = () => {
           Millions of people around the world visit Indiegogo to find clever and
           unconventional things that solve everyday problems large and small. By
           giving entrepreneurs everywhere a platform to launch new and
-          groundbreaking products, we help surface innovations in tech, design,
-          and much more, all before they go mainstream{" "}
+          groundbreaking products, we help surface innovations in tech,
+          design,and much more, all before they go mainstream Millions of people
+          aroundthe world visit Indiegogo to find clever and unconventional
+          thingsthat solve everyday problems large and small. By giving
+          entrepreneurseverywhere a platform to launch new and groundbreaking
+          products, wehelp surface innovations in tech, design, and much more,
+          all beforethey go mainstream{" "}
         </p>
+      </div>
+      <div className="quote_image">
+        <img src={aboutus} alt="logo" />
       </div>
     </div>
   );

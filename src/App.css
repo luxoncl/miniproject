@@ -47,6 +47,44 @@
 
 .custom-card {
   background: #000000;
-box-shadow: inset 0px 4px 4px #0AF1B6;
-border-radius: 79px;
+  box-shadow: inset 0px 4px 4px #0AF1B6;
+  border-radius: 79px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20rem;
+  width: 20rem;
+  margin: 0 20px 0 20px;
+}
+
+.custom-btn {
+  background: #0AF1B6;
+  padding: 10px 20px 10px 20px;
+  border-radius: 11px;
+  color: #000000;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
 }

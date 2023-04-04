@@ -52,61 +52,100 @@ const Admin = () => {
         </div>
       </div>
       <div className="content">
-        <div className="content_center">
-          {description && (
-            <h1 className="expanded">
-              <form className="project_details">
-                NAME <br />
-                <input type="text" name="name" /> <br /> <br />
-                DATE OF BIRTH <br />
-                <input type="text" name="name" /> <br /> <br />
-                PHONE NUMBER <br />
-                <input type="text" name="name" /> <br /> <br />
-                COUNTRY
-                <br />
-                <select name="country">
-                  <option value="india">INDIA</option>
-                  <option value="usa">USA</option>
-                  <option value="uk">UK</option>
-                  <option value="africa">AFRICA</option>
-                </select>
-                <br /> <br />
-                Project Name
-                <br />
-                <input type="text" name="name" /> <br /> <br />
-                CREATE PASSWORD <br />
-                <input type="text" name="name" /> <br /> <br />
-                CONFIRM PASSWORD <br />
-                <input type="text" name="name" /> <br /> <br />
-                <input type="checkbox" id="" name="agreement" value="" />
-                <br />
-                <label className="terms">
-                  I agree to the terms and conditions
-                </label>
-                <br /> <br />
-                <button className="submit"> Register</button>
-              </form>
-            </h1>
-          )}
-        </div>
+        <div className="content_center"></div>
       </div>
-      <div>
+      <div style={{ padding: "2rem" }}>
         <h1 className="text-cyan">Welcome Administrator</h1>
-        <div className="custom-card">
-          <h2>Project Name</h2>
-          <p>Lorem ipsum something something...</p>
+        <div className="cards-container">
+          {[1, 2, 3, 4, 5].map(() => (
+            <div className="custom-card" style={{ marginTop: "30px" }}>
+              <h2 style={{ margin: "2px" }} className="text-cyan">
+                Project Name
+              </h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <button className="custom-btn">Click for more!</button>
+            </div>
+          ))}
+        </div>
+        {description && (
+          <div>
+            <div className="custom-card" style={{ width: "40rem" }}>
+              <form className="project_details">
+                <div className="d-flex justify-content-between align-items-center">
+                  <span>NAME :</span>
+                  <input type="text" name="name" />
+                </div>
+                <br />
+                <div className="d-flex justify-content-between align-items-center">
+                  <span>DATE OF BIRTH :</span>
+                  <input type="text" name="name" />
+                </div>
+                <br />
+                <div className="d-flex justify-content-between align-items-center">
+                  <span>PHONE NUMBER :</span>
+                  <input type="number" name="name" />
+                </div>
+                <br />
+                <div className="d-flex justify-content-between align-items-center">
+                  <span>COUNTRY :</span>
+                  <select name="country">
+                    <option value="india">INDIA</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="africa">AFRICA</option>
+                  </select>
+                </div>
+                <br />
+                <div className="d-flex justify-content-between align-items-center">
+                  <span>Project Name :</span>
+                  <input type="text" name="name" />
+                </div>
+                <br />
+                <div className="d-flex justify-content-between align-items-center">
+                  <span>CREATE PASSWORD :</span>
+                  <input type="text" name="name" />
+                </div>
+                <br />
+                <div className="d-flex justify-content-between align-items-center">
+                  <span>CONFIRM PASSWORD :</span>
+                  <input type="text" name="name" />
+                </div>
+                <br />
+                <div className="d-flex justify-content-between align-items-center">
+                  <input type="checkbox" id="" name="agreement" value="" />
+                  <label>I agree to the terms and conditions</label>
+                </div>
+                <br />
+                <button className="submit">Register</button>
+              </form>
+            </div>
+          </div>
+        )}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "30px",
+          }}
+        >
+          <button
+            onClick={desc}
+            className="custom-btn"
+            style={{ marginRight: "10px" }}
+          >
+            Add on Projects
+          </button>
+          <button className="custom-btn" style={{ marginLeft: "10px" }}>
+            Remove Projects
+          </button>
         </div>
       </div>
-      {/* <div className="">
-          <button onClick={desc}>
-            <h1>Add on Projects </h1>
-          </button>
-        </div>
-        <div className=" content_right">
-          <button>
-            <h1> Remove Projects</h1>
-          </button>
-        </div> */}
     </div>
   );
 };
