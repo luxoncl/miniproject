@@ -43,16 +43,11 @@ const Register = () => {
             <input type="text" name="name" /> <br /> <br />
             CONFIRM PASSWORD <br />
             <input type="text" name="name" /> <br /> <br />
-            <p>SELECT ROLE </p>
-            <input type="radio" id="develop" name="role" value="developer" />
-            <label for="developer">DEVELOPER</label>
-            <input type="radio" id="use" name="role" value="user" />
-            <label for="user">USER</label> <br /> <br />
             <input type="checkbox" id="" name="agreement" value="" />
             <br />
             <label className="terms">I agree to the terms and conditions</label>
             <br /> <br />
-            <input className="submit" type="button" value="submit" />
+            <button className="submit"> Register</button>
           </form>
         </div>
       </div>

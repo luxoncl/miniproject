@@ -1,0 +1,64 @@
+.admin{
+    background-image:url(/Users/luxoncl/projects/miniproject/src/images/1268183.webp);
+    height:500vh;
+}  
+
+.admin_head{
+    display: flex;
+    justify-content: space-evenly;
+    height: 15vh;
+
+}
+.head_left{
+    display:flex;
+    flex: 0.2;
+    margin-right:840px;
+}
+
+.image_admin{
+    margin-top: 20px;
+}
+.admin_title{
+    color: rgba(10, 241, 182, 1);
+    width: 30vh;
+}
+.head_right{
+    color:rgba(10, 241, 182, 1) ;
+    display: flex;
+    flex: 0.9;
+}
+.content_eft{
+    text-align: center;
+    color: black;
+    background-color:rgba(10, 241, 182, 1) ;
+    color:rgba(10, 241, 182, 1) ;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 7px;
+    box-shadow:0 5px 6px rgba(10, 241, 182, 1),0 2px 3px rgba(10, 241, 182, 1) ;
+}
+.content_center{
+   align-items: center;
+   width: 350vh;
+   height:150vh;
+}
+.project__details > input{
+    color: aliceblue;
+    background-color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow:0 5px 6px rgba(10, 241, 182, 1),0 2px 3px rgba(10, 241, 182, 1);
+
+}
+.project__details>select{
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow:0 5px 6px rgba(10, 241, 182, 1),0 2px 3px rgba(10, 241, 182, 1);
+
+}

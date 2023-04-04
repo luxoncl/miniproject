@@ -1,8 +1,18 @@
 import React from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = (props) => {
+  const [user, setUser] = useState({ name: "" });
+  const navigate = useNavigate();
+  const handleclick = (event) => {
+    event.preventDefault();
+    navigate("/Admin");
+    props.setAdm([...props.adm, user]);
+    setUser({ name: "" });
+  };
   return (
     <div className="login">
       <div className="top__content">
@@ -26,10 +36,20 @@ const Login = () => {
           <form className="input">
             <p>LOGIN</p>
             USERNAME <br />
-            <input type="text" name="name" /> <br /> <br />
+            <input
+              type="text"
+              onChange={(event) => {
+                setUser({ ...user, name: event.target.value });
+              }}
+              value={user.name}
+            />
+            <br />
+            <br />
             PASSWORD <br />
             <input type="text" name="pass" /> <br /> <br />
-            <input className="submit" type="button" value="submit" />
+            <button className="submit" onClick={handleclick}>
+              Login
+            </button>
           </form>
         </div>
       </div>
