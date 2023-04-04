@@ -55,11 +55,6 @@ const Admin = () => {
         </div>
       </div>
       <div className="content">
-        <div className="content_left">
-          <button onClick={desc}>
-            <h1>Add on Projects </h1>
-          </button>
-        </div>
         <div className="content_center">
           {description && (
             <h1 className="expanded">
@@ -96,6 +91,11 @@ const Admin = () => {
               </form>
             </h1>
           )}
+        </div>
+        <div className="">
+          <button onClick={desc}>
+            <h1>Add on Projects </h1>
+          </button>
         </div>
         <div className=" content_right">
           <button>
