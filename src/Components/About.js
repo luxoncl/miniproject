@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import { Link } from "react-router-dom";
-import aboutus from "/Users/luxoncl/projects/miniproject/src/images/aboutus.jpeg";
+import aboutus from "../images/aboutus.jpeg";
 
 const About = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { useState } from "react";
-import registration from "/Users/luxoncl/projects/miniproject/src/images/registration.png";
+import registration from "../images/registration.png";
 import { Link } from "react-router-dom";
 const Home = () => {
   const [expand, setExpand] = useState(false);
